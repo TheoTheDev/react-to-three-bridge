@@ -55,6 +55,7 @@ module.exports = conf = {
     },
     plugins,
     optimization: {
+        minimize: true,
         splitChunks: {
             chunks: 'all',
             maxInitialRequests: Infinity,
