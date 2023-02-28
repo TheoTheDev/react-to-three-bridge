@@ -35,6 +35,10 @@ rtBridge.onReactEvent( 'EventName', callback );
 
 // And remove
 rtBridge.removeReactEventListener( 'EventName', sameCallbackFn );
+
+// call each render loop to process the events queue
+rtBridge.processEvents();
+
 ```
 
 General:
