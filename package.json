@@ -1,31 +1,29 @@
 {
-  "name": "getting-started-01",
-  "version": "1.0.0",
-  "description": "",
-  "keywords": [],
-  "main": "src/index.js",
-  "homepage": "./",
-  "dependencies": {
-    "react": "17.0.0",
-    "react-dom": "17.0.0",
-    "react-scripts": "3.4.3",
-    "react-three-fiber": "5.3.10",
-    "styled-components": "5.0.0",
-    "three": "0.123.0"
-  },
-  "devDependencies": {
-    "typescript": "3.8.3"
-  },
-  "scripts": {
-    "start": "PORT=5000 react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+    "name": "react-to-three-bridge",
+    "version": "1.0.0",
+    "description": "",
+    "keywords": [],
+    "homepage": "./",
+    "dependencies": {
+        "@types/node": "^14.14.31",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@types/styled-components": "^5.1.26",
+        "@types/three": "^0.149.0",
+        "copy-webpack-plugin": "^11.0.0",
+        "react": "17.0.0",
+        "react-dom": "17.0.0",
+        "styled-components": "5.0.0",
+        "three": "^0.150.1",
+        "ts-loader": "^8.0.17",
+        "typescript": "^4.7.3",
+        "webpack-cli": "^5.0.0",
+        "three-stdlib": "^2.10.2"
+    },
+    "devDependencies": {
+        "typescript": "3.8.3"
+    },
+    "scripts": {
+        "start": "webpack --config ./webpack.config.js --watch & http-server ./build --port 8105 -s"
+    }
 }

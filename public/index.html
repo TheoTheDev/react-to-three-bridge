@@ -2,16 +2,36 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>ReactToThree bridge example</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ReactToThree bridge example</title>
+
+    <style>
+        html, body {
+            position: absolute;
+            margin: 0;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        #root, #renderport {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="./scripts/vendor.bundle.js"></script>
+    <script src="./scripts/main.bundle.js"></script>
+
 </head>
 
 <body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
+
+    <div id="root"></div>
+
 </body>
 
 </html>

@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "outDir": "./dist/",
+        "esModuleInterop": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "allowJs": true,
+        "sourceMap": true,
+        "lib": [ "esnext", "dom" ],
+        "jsx": "react"
+    },
+    "exclude": [
+        "./node_modules",
+        "./build"
+    ],
+    "include": [
+        "./src"
+    ]
+}
